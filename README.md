@@ -1,1 +1,7 @@
-# pygame-car-fuel-rush
+# Pygame - Car Fuel Rush
+
+#### Simple game to keep cars running by placing fuel cans on the road.
+
+## Local Setup:
+ 1. Run `pip install -r requirements.txt`
+ 2. Run *app.py* using `python app.py`
