@@ -19,7 +19,6 @@ HOUSE = 2
 ROAD = 0
 
 CAR_SPEED = 10  # Lower values will make the car move faster, higher values will make it move slower
-NUM_CARS = 5  # Number of cars
 FUEL_SPOT = 3
 
 PANEL_COLOR = (200, 200, 200)
