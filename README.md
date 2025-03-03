@@ -1,7 +1,7 @@
 # Pygame - Car Fuel Rush
 
 ### Simple game to keep cars running by placing limited number of fuel cans on the road.
-### Developed entirely using GPT-4 with multiple iterations of fine-tuning.
+### Developed entirely using GPT-4
 
 ## Features:
 1. **Game:** It uses Pygame GUI
