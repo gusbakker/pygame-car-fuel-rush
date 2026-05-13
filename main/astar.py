@@ -2,10 +2,11 @@ import heapq
 
 
 class AStar:
-    def __init__(self, grid, start, end):
+    def __init__(self, grid, start, end, blocked_values=(1,)):
         self.grid = grid
         self.start = start
         self.end = end
+        self.blocked_values = set(blocked_values)
 
     def find_path(self):
         open_set = PriorityQueue()
@@ -33,10 +34,14 @@ class AStar:
 
     def get_neighbors(self, point):
         neighbors = []
+        height = len(self.grid)
+        width = len(self.grid[0]) if height else 0
+
         for dx, dy in ((1, 0), (-1, 0), (0, 1), (0, -1)):
             x, y = point[0] + dx, point[1] + dy
-            if 0 <= x < len(self.grid) and 0 <= y < len(self.grid[0]) and self.grid[y][x] != 1:
+            if 0 <= x < width and 0 <= y < height and self.grid[y][x] not in self.blocked_values:
                 neighbors.append((x, y))
+
         return neighbors
 
     def heuristic(self, point1, point2):

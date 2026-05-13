@@ -1,0 +1,43 @@
+from pathlib import Path
+
+
+ROOT_DIR = Path(__file__).resolve().parent.parent
+IMAGE_DIR = ROOT_DIR / "images"
+MAP_PATH = ROOT_DIR / "maps" / "map.txt"
+
+CELL_SIZE = 20
+PANEL_WIDTH = 340
+FPS_LIMIT = 60
+
+ROAD = 0
+TREE = 1
+HOUSE = 2
+
+STARTING_FUEL_STOCK = 8
+FUEL_REFILL_AMOUNT = 55
+FUEL_BURN_PER_TILE = 1.18
+LOW_FUEL_THRESHOLD = 28
+AUTO_FUEL_THRESHOLD = 34
+
+PANEL_TOP = (22, 26, 33)
+PANEL_BOTTOM = (30, 35, 42)
+TEXT = (236, 239, 243)
+TEXT_MUTED = (156, 166, 176)
+TEXT_DIM = (103, 113, 124)
+LINE = (61, 70, 82)
+SUCCESS = (91, 194, 129)
+WARNING = (239, 176, 73)
+DANGER = (231, 88, 95)
+CYAN = (72, 192, 221)
+BLUE = (83, 142, 250)
+
+CAR_COLORS = [
+    (239, 111, 108),
+    (88, 166, 255),
+    (111, 207, 151),
+    (246, 190, 86),
+    (184, 135, 255),
+    (70, 205, 207),
+    (255, 147, 91),
+    (238, 126, 181),
+]
