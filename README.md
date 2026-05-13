@@ -1,6 +1,8 @@
 # Pygame - Car Fuel Rush
 
 A small Pygame traffic-and-fuel simulator where you keep a fleet alive by dispatching cars and placing a limited number of fuel cans on the road.
+=======
+
 
 The original project was developed through GPT-assisted iteration. The latest simulator, UI, and README improvements were made with Codex GPT-5.5.
 
