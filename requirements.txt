@@ -1,3 +1,1 @@
 pygame==2.3.0
-pygame_gui==0.6.9
-astar~=0.98
